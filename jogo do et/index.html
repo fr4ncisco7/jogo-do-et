@@ -81,7 +81,7 @@
             this.physics.add.collider(moeda, plataformas[1]); // Adiciona colisão da moeda com a outra plataforma
 
             //Adicionando placar e informando as configurações dele, a fonte, o tamanho, etc. 
-            placar = this.add.text(50, 50, 'Moedas: ' + pontuacao, { fontSize: '50px', fill: '#495613' });
+            placar = this.add.text(50, 50, 'Moedas: ' + pontuacao, { fontSize: '50px', fill: '#495613' }); //OBS: O contador só está aparecendo quando está em tela cheia
 
             //Quando o et encostar nas moedas
             this.physics.add.overlap(et, moeda, function(){
